@@ -1,56 +1,21 @@
-import React from 'react'
-import Img from 'gatsby-image'
+import React from "react"
+import { Link } from "gatsby"
 
-const IndexPage = ({ data }) => (
-  <div className="Catalogue">
-    {
-      data.products.edges.map(({ node: product }) => (
-        <div className="Catalogue__item" key={product.id}>
-          <a
-            href="#"
-            className="Product snipcart-add-item"
-            data-item-id={product.id}
-            data-item-price={product.price}
-            data-item-image={product.image.url}
-            data-item-name={product.name}
-            data-item-url={`/`}
-          >
-            <div className="Product__image">
-              <Img sizes={product.image.sizes} />
-            </div> <div className="Product__details">
-              <div className="Product__name">
-                {product.name}
-                <div className="Product__price">
-                  {product.price}€
-                </div>
-              </div>
-              <span className="Product__buy">Buy now</span>
-            </div>
-          </a>
-        </div>
-      ))
-    }
-  </div>
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link>
+  </Layout>
 )
 
 export default IndexPage
-
-export const query = graphql`
-query CatalogueQuery {
-  products: allDatoCmsProduct {
-    edges {
-      node {
-        id
-        name
-        price
-        image {
-          url
-          sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
-            ...GatsbyDatoCmsSizes
-          }
-        }
-      }
-    }
-  }
-}
-`
