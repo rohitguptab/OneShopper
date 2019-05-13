@@ -1,3 +1,47 @@
 .gatsby-image-wrapper {
   height: 200px;
 }
+
+.product-main {
+}
+
+.product-main .details_List {
+  margin: 0 0 20px 0;
+  box-shadow: 0px 0px 15px 0 #ccc;
+  border: 1px solid #cccccc73;
+}
+
+.product-main .details_List .details_inner {
+  padding: 10px 10px;
+  position: relative;
+}
+
+.product-main .details_List .details_inner h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-main .details_List .details_inner h2 a {
+  color: #333;
+}
+
+.product-main .details_List .details_inner span {
+  position: absolute;
+  bottom: calc(100% + 3px);
+  background: #fff;
+  padding: 4px 20px 8px 20px;
+  line-height: 25px;
+  right: calc(0px + 3px);
+  font-weight: bold;
+}
+
+.product-main .details_List .details_inner .snipcart-add-item {
+  border: 1px solid #333;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 13px;
+  color: #333;
+  border-radius: 20px;
+  font-weight: 600;
+}

@@ -12,26 +12,30 @@ import "../css/style.css"
 const IndexPage = data => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="row">
+    <div className="row product-main">
       {data.data.allDatoCmsProduct.edges.map(items => (
-        <li className="Catalogue__item col-sm-4" key={items.node.id}>
-          <h2>
-            <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
-          </h2>
-          <Img sizes={items.node.image.sizes} />
-          <span>{items.node.price}</span>
-          <a
-            href="#"
-            className="Product snipcart-add-item"
-            data-item-id={items.node.slug}
-            data-item-price={items.node.price}
-            data-item-image={items.node.image.url}
-            data-item-name={items.node.name}
-            data-item-url={`/`}
-          >
-            Buy Now
-          </a>
-        </li>
+        <div className="Catalogue__item col-sm-4" key={items.node.id}>
+          <div className="details_List">
+            <Img sizes={items.node.image.sizes} />
+            <div className="details_inner">
+              <h2>
+                <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
+              </h2>
+              <span>{items.node.price}</span>
+              <a
+                href="#"
+                className="Product snipcart-add-item"
+                data-item-id={items.node.slug}
+                data-item-price={items.node.price}
+                data-item-image={items.node.image.url}
+                data-item-name={items.node.name}
+                data-item-url={`/`}
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
     <a href="#" className="Header__summary snipcart-summary snipcart-checkout">
