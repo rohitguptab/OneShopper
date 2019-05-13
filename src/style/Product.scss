@@ -1,0 +1,132 @@
+.Product {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.Product__image {
+  border: 3px solid black;
+  padding: 7px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: 9px 9px black;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.Product:hover .Product__image {
+  img {
+    transform: skew(-15deg, -5deg) rotate(20deg);
+  }
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    background: black;
+    z-index: 2;
+  }
+
+  &:before {
+    left: 50%;
+    margin-left: 1px;
+    top: 8px;
+    bottom: 7px;
+    animation: cross-1 6s steps(4, end) infinite alternate-reverse;
+  }
+
+  &:after {
+    top: 50%;
+    margin-top: 1px;
+    left: 7px;
+    right: 7px;
+    animation: cross-2 9s steps(6, end) infinite alternate-reverse;
+  }
+}
+
+.Product__details {
+  display: flex;
+  align-items: center;
+}
+
+.Product__name {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.Product__price {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #555;
+}
+
+.Product__buy {
+  flex: 1;
+  text-align: right;
+  text-transform: uppercase;
+  background: #663399;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+
+    &:before {
+      content: "Yes now";
+      position: absolute;
+      top: -10px;
+      left: 60%;
+      white-space: nowrap;
+      font-family: "times new roman", times, serif;
+      font-weight: normal;
+      font-style: italic;
+      mix-blend-mode: difference;
+      text-transform: lowercase;
+      text-decoration: overline;
+      color: #00efff;
+      font-size: 2em;
+      animation: blink 6s steps(4, end) infinite alternate-reverse;
+    }
+  }
+}
+
+@keyframes cross-1 {
+  $steps: 5;
+
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))}{
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+      width: (1 + random(3)) + px;
+    }
+  }
+}
+
+@keyframes cross-2 {
+  $steps: 5;
+
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))}{
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+      height: (1 + random(2)) + px;
+    }
+  }
+}
+
+@keyframes blink {
+  $steps: 20;
+
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps) + ((15 - random(30)) / 15) * (1 / $steps))} {
+      @if ($i % 3 == 0) {
+        opacity: 1;
+      } @else {
+        opacity: 0;
+      }
+    }
+  }
+}

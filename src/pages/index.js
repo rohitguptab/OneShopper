@@ -1,74 +1,56 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import Img from 'gatsby-image'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
-
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
+const IndexPage = ({ data }) => (
+  <div className="Catalogue">
+    {
+      data.products.edges.map(({ node: product }) => (
+        <div className="Catalogue__item" key={product.id}>
+          <a
+            href="#"
+            className="Product snipcart-add-item"
+            data-item-id={product.id}
+            data-item-price={product.price}
+            data-item-image={product.image.url}
+            data-item-name={product.name}
+            data-item-url={`/`}
+          >
+            <div className="Product__image">
+              <Img sizes={product.image.sizes} />
+            </div> <div className="Product__details">
+              <div className="Product__name">
+                {product.name}
+                <div className="Product__price">
+                  {product.price}€
+                </div>
+              </div>
+              <span className="Product__buy">Buy now</span>
             </div>
-          )
-        })}
-      </Layout>
-    )
-  }
-}
-
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+          </a>
+        </div>
+      ))
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
+  </div>
+)
+
+export default IndexPage
+
+export const query = graphql`
+query CatalogueQuery {
+  products: allDatoCmsProduct {
+    edges {
+      node {
+        id
+        name
+        price
+        image {
+          url
+          sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
+            ...GatsbyDatoCmsSizes
           }
         }
       }
     }
   }
+}
 `

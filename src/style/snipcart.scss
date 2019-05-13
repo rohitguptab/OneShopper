@@ -1,0 +1,23 @@
+.snip-layout.snip-layout {
+  * {
+    font-family: consolas, Menlo, monospace, sans-serif;
+  }
+
+  .snip-product__name {
+    text-transform: none;
+  }
+
+  .snip-header {
+    background: #663399;
+  }
+
+  .snip-layout__main-container {
+    border: 2px solid black;
+    padding: 3px;
+  }
+
+  .snip-header__total {
+    border-radius: 0;
+  }
+}
+
