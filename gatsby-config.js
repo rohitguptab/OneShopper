@@ -27,8 +27,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `2b1c955eaf2375388bb3d76c64d51e`,
+        previewMode: false,
+        disableLiveReload: false,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey: `NzA4NjFmNGUtZTNhOC00NzVmLThkMTAtNDZkMTMzYjkwZWE5NjM2ODk1MjIwOTE0ODEwOTY2`,
+        autopop: true,
+      },
+    },
   ],
 }
