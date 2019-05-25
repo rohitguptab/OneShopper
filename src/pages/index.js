@@ -1,12 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import "bootstrap/dist/css/bootstrap.css"
 import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../css/style.css"
 
 class IndexPost extends React.Component {
   constructor(props) {
@@ -41,8 +37,6 @@ class IndexPost extends React.Component {
     const { data } = this.props;
     const { NoOfPost } = this.state;
 
-    console.log(NoOfPost);
-
     return (
       <React.Fragment>
         <div className="row product-main" onScroll={this.onScrollEvent}>
@@ -61,7 +55,7 @@ class IndexPost extends React.Component {
                     <div className="col-sm-4">
                       <span className="price">${items.node.price}</span>
                     </div>
-                    <div className="col-sm-8">
+                    <div className="col-sm-8 text-right">
                       <a
                         href="#"
                         className="Product snipcart-add-item"
@@ -71,11 +65,10 @@ class IndexPost extends React.Component {
                         data-item-name={items.node.name}
                         data-item-url={`/`}
                       >
-                        <i class="fas fa-shopping-bag" />Add to Cart
+                        <i className="fas fa-shopping-bag" />Add to Cart
                     </a>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>

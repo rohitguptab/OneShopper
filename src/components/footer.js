@@ -4,10 +4,10 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="site-footer">
-                <div class="container">
+                <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <span>Footer</span>
+                            <span>Rohit Gupta</span>
                         </div>
                     </div>
                 </div>

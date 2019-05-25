@@ -1,4 +1,4 @@
-body {
+* {
   font-family: 'Ceviche One', cursive;
 }
 
@@ -66,7 +66,7 @@ main {
 
 
 .header-cart {
-  width: 250px;
+  width: 80px;
 }
 
 .header-cart * {
@@ -99,7 +99,7 @@ header nav {
 header nav ul.navbar-nav {
   flex-direction: row;
   margin: 0;
-  width: 80%;
+  width: 90%;
 }
 
 header nav ul.navbar-nav li {margin: 0 10px;}
@@ -167,5 +167,36 @@ footer.site-footer * {
   background: #ef3d56 !important;
 }
 .product-details  .gatsby-image-wrapper {
+  margin-bottom: 30px;
+}
+span.price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.Product-Screenshot ul.react-tabs__tab-list {
+    list-style: none;
+    margin: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Product-Screenshot ul.react-tabs__tab-list li {
+    width: 190px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.Product-Screenshot li {
+  list-style: none;
+}
+.Product-Screenshot {
+  position: relative;
   margin-bottom: 30px;
 }
