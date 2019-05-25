@@ -113,7 +113,7 @@ export const query = graphql`
           price
           details {
             childMarkdownRemark {
-              excerpt(pruneLength: 150)
+              excerpt(pruneLength: 140)
             }
           }
         }

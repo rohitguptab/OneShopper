@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
+
 * {
-  font-family: 'Ceviche One', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .product-main .details_List .gatsby-image-wrapper {
@@ -22,7 +24,7 @@
 }
 
 .product-main .details_List .details_inner h2 {
-  font-size: 20px;
+  font-size: 24px;
   color: #333;
   margin-bottom: 10px;
 }
@@ -35,7 +37,7 @@
   border: 1px solid #ef3d56;
   padding: 10px 15px;
   display: inline-block;
-  font-size: 11px;
+  font-size: 12px;
   color: #fff !important;
   border-radius: 5px;
   font-weight: 600;
@@ -134,7 +136,7 @@ footer.site-footer * {
   font-size: 16px;
 }
 .product-main .details_List .details_inner p {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .snip-layout .snip-header {
@@ -171,7 +173,7 @@ footer.site-footer * {
 }
 span.price {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .Product-Screenshot ul.react-tabs__tab-list {
@@ -199,4 +201,10 @@ span.price {
 .Product-Screenshot {
   position: relative;
   margin-bottom: 30px;
+}
+.dv-star-rating i {
+  font-size: 30px;
+}
+.buynowinner {
+  margin-bottom: 20px;
 }

@@ -4,9 +4,13 @@ import React from "react"
 import "../css/font-awesome.css"
 import "bootstrap/dist/css/bootstrap.css"
 import "../css/style.css"
+import SEO from "../components/seo"
 
 const Header = ({ siteTitle }) => (
   <header>
+    <SEO>
+      <h1>Rohit here</h1>
+    </SEO>
     <div className="container">
       <div className="row">
         <div className="col-sm-12">

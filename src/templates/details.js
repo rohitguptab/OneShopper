@@ -33,14 +33,7 @@ const ProductDetails = data => (
           starCount={5}
           value={data.data.contentfulProduct.rating}
         />
-
-        <div
-          dangerouslySetInnerHTML={{
-            __html: data.data.contentfulProduct.details.childMarkdownRemark.html
-          }}
-        />
-
-        <div className="row">
+        <div className="row buynowinner">
           <div className="col-sm-2">
             <span className="price">Price: ${data.data.contentfulProduct.price}</span>
           </div>
@@ -56,9 +49,14 @@ const ProductDetails = data => (
             >
               <i className="fas fa-tags" />
               Buy Now
-      </a>
+            </a>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.data.contentfulProduct.details.childMarkdownRemark.html
+          }}
+        />
       </div>
     </div>
   </Layout >
