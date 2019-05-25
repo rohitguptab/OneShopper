@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import "bootstrap/dist/css/bootstrap.css"
 import Img from "gatsby-image"
@@ -11,22 +10,29 @@ import "../css/style.css"
 const ProductDetails = data => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="product-details">
-      <h2>{data.data.datoCmsProduct.name}</h2>
-      <Img sizes={data.data.datoCmsProduct.image.sizes} />
-      <span>{data.data.datoCmsProduct.price}</span>
-      <p>{data.data.datoCmsProduct.details}</p>
-      <a
-        href="#"
-        className="Product snipcart-add-item"
-        data-item-id={data.data.datoCmsProduct.slug}
-        data-item-price={data.data.datoCmsProduct.price}
-        data-item-image={data.data.datoCmsProduct.image.url}
-        data-item-name={data.data.datoCmsProduct.name}
-        data-item-url={`/`}
-      >
-        Buy Now
+    <div className="container">
+      <div className="product-details">
+        {data.data.contentfulProduct.image === null ? "" : <Img fixed={data.data.contentfulProduct.image.fixed} />}
+        <h2>{data.data.contentfulProduct.name}</h2>
+        <span>{data.data.contentfulProduct.price}</span>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.data.contentfulProduct.details.childMarkdownRemark.html
+          }}
+        />
+        <a
+          href="#"
+          className="Product snipcart-add-item"
+          data-item-id={data.data.contentfulProduct.slug}
+          data-item-price={data.data.contentfulProduct.price}
+          data-item-image={data.data.contentfulProduct.image === null ? "" : data.data.contentfulProduct.image.fixed.src}
+          data-item-name={data.data.contentfulProduct.name}
+          data-item-url={`/`}
+        >
+          <i class="fas fa-tags" />
+          Buy Now
       </a>
+      </div>
     </div>
   </Layout>
 )
@@ -35,18 +41,24 @@ export default ProductDetails
 
 export const query = graphql`
   query ProductDetailsQuery($slug: String!) {
-    datoCmsProduct(slug: { eq: $slug }) {
+    contentfulProduct(slug: {eq: $slug }) {
       id
       name
       slug
       image {
-        url
-        sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
+        fixed(width: 1120, height: 500) {
+          width
+          height
           src
+          srcSet
         }
       }
       price
-      details
+      details {
+        childMarkdownRemark {
+          html
+        }
+      }
     }
-  }
+}
 `

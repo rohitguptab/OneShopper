@@ -7,9 +7,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(`
         {
-          allDatoCmsProduct(limit: 100) {
-            edges {
-              node {
+          allContentfulProduct{
+            edges{
+              node{
                 id
                 slug
               }
@@ -20,7 +20,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         if (result.errors) {
           reject(result.errors)
         }
-        result.data.allDatoCmsProduct.edges.forEach(edge => {
+        result.data.allContentfulProduct.edges.forEach(edge => {
           createPage({
             path: edge.node.slug,
             component: blogPostTemplate,
