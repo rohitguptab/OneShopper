@@ -119,7 +119,7 @@ footer.site-footer * {
 }
 .no-image {
   height: 200px;
-  background: #333333b0;
+  background: #ef3d5675;
   display: flex;
   justify-content: center;
   flex-direction: column;

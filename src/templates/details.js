@@ -1,5 +1,6 @@
 import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import StarRatingComponent from 'react-star-rating-component';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,6 +28,11 @@ const ProductDetails = data => (
 
         </div>
         <h2>{data.data.contentfulProduct.name}</h2>
+        <StarRatingComponent
+          name="rate1"
+          starCount={5}
+          value={data.data.contentfulProduct.rating}
+        />
 
         <div
           dangerouslySetInnerHTML={{
