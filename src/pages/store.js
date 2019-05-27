@@ -16,7 +16,7 @@ class IndexPost extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="row product-main" onScroll={this.onScrollEvent}>
+        <div className="row product-main">
           {data.data.allContentfulProduct.edges.map(items => (
             <div className="Catalogue__item col-sm-4" key={items.node.id}>
               <div className="details_List">
