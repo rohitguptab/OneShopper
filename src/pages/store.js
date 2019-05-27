@@ -8,16 +8,40 @@ import StarRatingComponent from 'react-star-rating-component';
 class IndexPost extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      NoOfPost: 6
+    };
+    this.handleScroll = this.handleScroll.bind(this);
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    var lastScrollY = window.pageYOffset + 1100;
+
+    if (lastScrollY > window.outerHeight) {
+      var count = this.state.NoOfPost + 3;
+      this.setState({
+        NoOfPost: count
+      });
+    }
+  };
 
   render() {
 
     const { data } = this.props;
+    const { NoOfPost } = this.state;
 
     return (
       <React.Fragment>
-        <div className="row product-main">
-          {data.data.allContentfulProduct.edges.map(items => (
+        <div className="row product-main" onScroll={this.onScrollEvent}>
+          {data.data.allContentfulProduct.edges.slice(0, NoOfPost).map(items => (
             <div className="Catalogue__item col-sm-4" key={items.node.id}>
               <div className="details_List">
                 {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
