@@ -11,7 +11,6 @@ import StarRatingComponent from 'react-star-rating-component';
 class IndexPost extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
