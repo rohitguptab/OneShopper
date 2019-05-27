@@ -9,7 +9,7 @@ class Contact extends React.Component {
                 <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
                 <div className="Contact-us">
                     <div className="container">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true" netlify>
                         <p>
                             <label>Your Name: <input type="text" name="name" /></label>   
                         </p>
