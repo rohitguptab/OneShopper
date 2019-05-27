@@ -583,3 +583,35 @@ ul.latest-blog li .inner a {
 .site-Banner .gatsby-image-wrapper {
   height: 500px;
 }
+
+.Contact-us {
+  margin: 40px 0;
+}
+
+.Contact-us form {}
+
+.Contact-us form input {
+  width: 100%;
+  height: 40px;
+}
+
+.Contact-us form textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.Contact-us form label {
+  width: 100%;
+}
+
+.Contact-us form>div {
+  margin-bottom: 30px;
+}
+
+.Contact-us form>div button {
+  width: 120px;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
