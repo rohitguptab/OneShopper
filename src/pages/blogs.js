@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,58 +6,35 @@ import SEO from "../components/seo"
 class BlogsPost extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      NoOfPost: 6
-    };
-    this.handleScroll = this.handleScroll.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
-    var lastScrollY = window.pageYOffset + 1100;
-
-    if (lastScrollY > window.outerHeight) {
-      var count = this.state.NoOfPost + 3;
-      this.setState({
-        NoOfPost: count
-      });
-    }
-  };
 
   render() {
 
     const { data } = this.props;
-    const { NoOfPost } = this.state;
 
     return (
       <React.Fragment>
-        <ul className="blog-list" onScroll={this.onScrollEvent}>
-          {data.data.allContentfulBlogs.edges.slice(0, NoOfPost).map(items => (
+        <ul className="blog-list">
+          {data.data.allContentfulBlogs.edges.map(items => (
             <li>
-                <div class="post-item template-square columned">
+              <div class="post-item template-square columned">
                 <div class="post-thumbnail">
-                    <Img sizes={items.node.featureImage.fixed} />
+                  <Img sizes={items.node.featureImage.fixed} />
                 </div>
                 <div class="post-details">
-                    <h2 class="post-title"><a href="#" class="">{items.node.title}</a></h2>
-                    <div className="author">
-                        <Img sizes={items.node.author.photo.fixed} />
-                        <strong className="name">{items.node.author.name}</strong>
-                    </div>
-                    <p>{items.node.description.childMarkdownRemark.excerpt}</p>
-                    <div class="post-date">
-                        <i class="fas fa-calendar-alt"></i>
-                        {items.node.publicData}
-                    </div>
+                  <h2 class="post-title"><a href="#" class="">{items.node.title}</a></h2>
+                  <div className="author">
+                    <Img sizes={items.node.author.photo.fixed} />
+                    <strong className="name">{items.node.author.name}</strong>
+                  </div>
+                  <p>{items.node.description.childMarkdownRemark.excerpt}</p>
+                  <div class="post-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    {items.node.publicData}
+                  </div>
                 </div>
-                </div>
+              </div>
             </li>
           ))}
         </ul>
