@@ -28,7 +28,6 @@
     "react-slick": "^0.24.0",
     "react-star-rating-component": "^1.4.1",
     "react-tabs": "^3.0.0",
-    "reactjs-countdown": "0.0.8"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
