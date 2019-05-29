@@ -18,7 +18,7 @@ const BlogDetails = data => (
             </div>
             <div className="container">
                 <div class="post-details">
-                    <h2 className="title with-underline">{data.data.contentfulBlogs.title}</h2>
+                    <h2 className="title">{data.data.contentfulBlogs.title}</h2>
                     <div class="post-date">
                         <i class="fas fa-calendar-alt"></i>
                         {data.data.contentfulBlogs.publicData}

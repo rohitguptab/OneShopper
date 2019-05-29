@@ -28,7 +28,7 @@ const ProductDetails = data => (
 
         </div>
         <div>
-          <h2 className="with-underline">{data.data.contentfulProduct.name}</h2>
+          <h2>{data.data.contentfulProduct.name}</h2>
         </div>
         <StarRatingComponent
           name="rate1"

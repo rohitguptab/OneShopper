@@ -108,7 +108,7 @@ main {
 }
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 header nav ul.navbar-nav {
