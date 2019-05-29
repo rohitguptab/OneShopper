@@ -7,13 +7,25 @@ class Contact extends React.Component {
         return (
             < Layout >
                 <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-                <div className="site-Contact">
+                <div className="Contact-us">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <span>Contact Us</span>
-                            </div>
+                    <form name="contact" method="POST" data-netlify="true" netlify>
+                        <div>
+                            <label>Your Name: </label>   
+                            <input type="text" name="name" />
                         </div>
+                        <div>
+                            <label>Your Email: </label>
+                            <input type="email" name="email" />
+                        </div>
+                        <div>
+                            <label>Message: </label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
                     </div>
                 </div>
             </ Layout>
