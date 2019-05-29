@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const ProductDetails = data => (
   < Layout >
 
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title={data.data.contentfulProduct.name} keywords={[`gatsby`, `application`, `react`]} />
     <div className="container details-page">
       <div className="product-details">
         <div className="Product-Screenshot">
@@ -27,7 +27,9 @@ const ProductDetails = data => (
             </Tabs>}
 
         </div>
-        <h2>{data.data.contentfulProduct.name}</h2>
+        <div>
+          <h2 className="with-underline">{data.data.contentfulProduct.name}</h2>
+        </div>
         <StarRatingComponent
           name="rate1"
           starCount={5}

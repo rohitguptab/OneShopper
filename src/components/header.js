@@ -9,11 +9,13 @@ import SEO from "../components/seo"
 const Header = ({ siteTitle }) => (
   <header className="site-header">
     <SEO>
-      <h1>Rohit here</h1>
     </SEO>
     <div className="container">
       <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-4 align-self-center">
+          <a className="header-logo" href="/">EcoStore</a>
+        </div>
+        <div className="col-sm-8 align-self-center">
           <nav>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">

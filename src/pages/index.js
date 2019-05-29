@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
 import LatestBlogs from "../components/latestBlog"
+import Countdown from "../components/countdown"
 import StarRatingComponent from 'react-star-rating-component';
 
 class IndexPost extends React.Component {
@@ -74,6 +75,7 @@ const IndexPage = data => (
       <div className="text-center"><h2 className="with-underline">Latest Items</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
+    <Countdown data={data.data.contentfulDealCountDown} />
   </Layout>
 )
 
@@ -131,7 +133,7 @@ export const query = graphql`
           srcSet
         }
       }
-      date(formatString: "MMMM D, YYYY")
+      date(formatString: "D MMMM, YYYY")
     }
     allContentfulBlogs(limit: 3,sort:{fields:createdAt,order: DESC}) {
       edges {

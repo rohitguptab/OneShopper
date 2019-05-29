@@ -10,8 +10,8 @@ console.log("Id", spaceId, accessToken)
 
 module.exports = {
   siteMetadata: {
-    title: `Rohit Gupta`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `EcoStore`,
+    description: `This Site for Ecommerce project`,
     author: `@Rohitguptab`,
   },
   plugins: [

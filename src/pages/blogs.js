@@ -42,23 +42,24 @@ class BlogsPost extends React.Component {
         <ul className="blog-list" onScroll={this.onScrollEvent}>
           {data.data.allContentfulBlogs.edges.slice(0, NoOfPost).map(items => (
             <li>
-                <div class="post-item template-square columned">
+              <div class="post-item template-square columned">
                 <div class="post-thumbnail">
-                    <Img sizes={items.node.featureImage.fixed} />
+                  <Img sizes={items.node.featureImage.fixed} />
+                  <div class="post-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    {items.node.publicData}
+                  </div>
                 </div>
                 <div class="post-details">
-                    <h2 class="post-title"><a href="#" class="">{items.node.title}</a></h2>
-                    <div className="author">
-                        <Img sizes={items.node.author.photo.fixed} />
-                        <strong className="name">{items.node.author.name}</strong>
-                    </div>
-                    <p>{items.node.description.childMarkdownRemark.excerpt}</p>
-                    <div class="post-date">
-                        <i class="fas fa-calendar-alt"></i>
-                        {items.node.publicData}
-                    </div>
+                  <h2 class="post-title"><a href={`/${items.node.slug}`} class="">{items.node.title}</a></h2>
+                  <div className="author">
+                    <Img sizes={items.node.author.photo.fixed} />
+                    <strong className="name">{items.node.author.name}</strong>
+                  </div>
+                  <p>{items.node.description.childMarkdownRemark.excerpt}</p>
+
                 </div>
-                </div>
+              </div>
             </li>
           ))}
         </ul>

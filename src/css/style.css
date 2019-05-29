@@ -8,7 +8,8 @@
   height: 200px;
 }
 
-.product-main {
+.img{
+  outline: none;
 }
 
 .product-main .details_List {
@@ -124,7 +125,7 @@ header nav ul.navbar-nav li a {
 /* header css */
 footer.site-footer {
   background: #333;
-  padding: 20px 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -365,7 +366,7 @@ span.price {
 
 .countdown-section {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .countdown-section .gatsby-image-wrapper {
@@ -459,6 +460,7 @@ ul.blog-list li .post-item .post-thumbnail {
     -webkit-transition: -webkit-box-shadow 0.2s;
     -o-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+    position: relative;
 }
 ul.blog-list li:hover .post-item .post-thumbnail {
 -webkit-box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.5);
@@ -614,4 +616,100 @@ ul.latest-blog li .inner a {
   background: #333;
   color: #fff;
   border: 1px solid #333;
+}
+
+.blogs-page {
+  background: #fafafa;
+  width: 100%;
+  display: inline-block;
+}
+
+.blogs-page .post-details {
+  background: #fff;
+  padding: 30px 30px;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+
+.blogs-page .post-thumbnail {
+    position: relative;
+}
+
+.blogs-page .post-thumbnail .gatsby-image-wrapper {
+    height: 550px;
+}
+
+.blogs-page .post-details .post-date {
+  margin-bottom: 20px;
+  font-size: 14px;
+  
+}
+
+.blogs-page .post-details .post-date i {
+  margin-right: 5px;
+}
+
+.blogs-page .post-details .author {
+  margin-bottom: 30px;
+}
+div#disqus_thread {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,.05);
+  margin-bottom: 30px;
+}
+
+.countdown-section .countdown-inner .date {
+  display: block;
+  margin-bottom: 40px;
+}
+.countdown-section .countdown-inner .date strong {
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  background: #fff;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  text-shadow: none;
+  color: #333;
+  border-top: 4px solid #ef3d56;
+}
+
+.countdown-section .countdown-inner .date strong i {
+  text-shadow: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+ul.blog-list li .post-item .post-thumbnail .post-date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-shadow: 3px 0 5px #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+ul.blog-list li .post-item .post-thumbnail .post-date i.fas {
+  margin-right: 10px;
+}
+a.header-logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer{display:block;width:100%;background:#f5f5f8;margin:0 auto;background-position:center;background-size:cover;text-align: center}
+.site-footer .footer_inner{padding:50px 0;-moz-box-sizing:border-box;box-sizing:border-box;position:relative}
+.site-footer.footer-content-width{max-width:1140px}
+.site-footer.footer-content-width .container{width:100%}
+.site-footer .footer-bottom{position:relative;margin-top: 10px;}
+.site-footer .copyright_text{font-size:16px}
+.site-footer .copyright_text p{margin:0}
+.site-footer .menu-main-container{text-align:center}
+.site-footer .menu-main-container ul li{display:inline-block;vertical-align:middle}
+.site-footer .menu-main-container ul li a{padding:0 15px}
+.site-footer .menu-main-container ul li .sub-menu{display:none}
+.site-footer  ul {
+  margin-bottom: 0;
 }
