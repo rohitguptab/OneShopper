@@ -24,7 +24,7 @@ class IndexPost extends React.Component {
           {data.data.allContentfulProduct.edges.map(items => (
             <div className="Catalogue__item col-sm-4" key={items.node.id}>
               <div className="details_List">
-                {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
+                {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fluid} />}
 
                 <div className="details_inner">
 
@@ -47,7 +47,7 @@ class IndexPost extends React.Component {
                         className="Product snipcart-add-item"
                         data-item-id={items.node.slug}
                         data-item-price={items.node.price}
-                        data-item-image={items.node.image === null ? "" : items.node.image.fixed.src}
+                        data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
                         data-item-name={items.node.name}
                         data-item-url={`/`}
                       >
@@ -91,11 +91,15 @@ export const query = graphql`
           slug
           rating
           image {
-            fixed(width: 1000, height: 500) {
-              width
-              height
+            fluid(maxWidth: 1000) {
+              base64
+              tracedSVG
+              aspectRatio
               src
               srcSet
+              srcWebp
+              srcSetWebp
+              sizes
             }
           }
           price
@@ -113,11 +117,15 @@ export const query = graphql`
           title
           subHeading
           image {
-            fixed(width: 1800, height: 500) {
-              width
-              height
+            fluid(maxWidth: 1800) {
+              base64
+              tracedSVG
+              aspectRatio
               src
               srcSet
+              srcWebp
+              srcSetWebp
+              sizes
             }
           }
         }
@@ -126,11 +134,15 @@ export const query = graphql`
     contentfulDealCountDown {
       title
       featureImage {
-        fixed(width: 1800, height: 500) {
-          width
-          height
+        fluid(maxWidth: 1800) {
+          base64
+          tracedSVG
+          aspectRatio
           src
           srcSet
+          srcWebp
+          srcSetWebp
+          sizes
         }
       }
       date(formatString: "D MMMM, YYYY")
@@ -142,11 +154,15 @@ export const query = graphql`
           title
           slug
           featureImage {
-            fixed(width: 1120, height: 500) {
-              width
-              height
+            fluid(maxWidth: 1120) {
+              base64
+              tracedSVG
+              aspectRatio
               src
               srcSet
+              srcWebp
+              srcSetWebp
+              sizes
             }
           }
         }

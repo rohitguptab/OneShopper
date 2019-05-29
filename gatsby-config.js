@@ -1,12 +1,7 @@
-const dotenv = require("dotenv");
+var dotenv = require("dotenv");
+dotenv.config();
 
-if (process.env.ENVIRONMENT !== "production") {
-  dotenv.config();
-}
-
-const { spaceId, accessToken } = process.env;
-
-console.log("Id", spaceId, accessToken)
+const { spaceId, accessToken, snipcart } = process.env;
 
 module.exports = {
   siteMetadata: {
@@ -41,14 +36,14 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: "ci5lvln4qads",
-        accessToken: "HBcEQt8zNhVX-pypZML3UbKNbaVtyHmhaWomQzYBhCU"
+        spaceId,
+        accessToken
       }
     },
     {
       resolve: "gatsby-plugin-snipcart",
       options: {
-        apiKey: `NzA4NjFmNGUtZTNhOC00NzVmLThkMTAtNDZkMTMzYjkwZWE5NjM2ODk1MjIwOTE0ODEwOTY2`,
+        apiKey: snipcart,
         autopop: true,
       },
     },

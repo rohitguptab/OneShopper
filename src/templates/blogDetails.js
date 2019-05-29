@@ -13,14 +13,14 @@ const BlogDetails = data => (
     < Layout >
         <SEO title={data.data.contentfulBlogs.title} keywords={[`gatsby`, `ecommerce`, `react`, `contentFul`, `Snipcart`]} />
         <div className="blogs-page">
-            <div class="post-thumbnail">
-                <Img sizes={data.data.contentfulBlogs.featureImage.fixed} />
+            <div className="post-thumbnail">
+                <Img sizes={data.data.contentfulBlogs.featureImage.fluid} />
             </div>
             <div className="container">
-                <div class="post-details">
+                <div className="post-details">
                     <h2 className="title">{data.data.contentfulBlogs.title}</h2>
-                    <div class="post-date">
-                        <i class="fas fa-calendar-alt"></i>
+                    <div className="post-date">
+                        <i className="fas fa-calendar-alt"></i>
                         {data.data.contentfulBlogs.publicData}
                     </div>
                     <div className="author">
@@ -73,12 +73,16 @@ export const query = graphql`
                 }
             }
             featureImage {
-            fixed(width: 1120, height: 500) {
-                width
-                height
-                src
-                srcSet
-            }
+                fluid {
+                    base64
+                    tracedSVG
+                    aspectRatio
+                    src
+                    srcSet
+                    srcWebp
+                    srcSetWebp
+                    sizes
+                  }
         }
     }
 }

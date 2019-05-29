@@ -108,13 +108,13 @@ main {
 }
 header nav {
   display: flex;
-  justify-content: flex-end;
-}
+  }
 
 header nav ul.navbar-nav {
   flex-direction: row;
   margin: 0;
   width: 90%;
+  justify-content: flex-end;
 }
 
 header nav ul.navbar-nav li {margin: 0 10px;}
