@@ -713,3 +713,150 @@ a.header-logo {
 .site-footer  ul {
   margin-bottom: 0;
 }
+.site-About {
+  padding: 40px 0;
+}
+footer.site-footer ul {
+  margin: 0;
+}
+
+/* Media Css */
+
+@media (max-width:991px){
+  ul.latest-blog li:last-child {
+      display: none;
+  }
+
+  ul.latest-blog li {
+      width: 50%;
+  }
+  ul.blog-list li .post-item .post-thumbnail {
+      width: 100%;
+  }
+
+  ul.blog-list li .post-item .post-details {
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  ul.blog-list li .post-item {
+      display: block;
+  }
+
+  ul.blog-list li {
+      margin-bottom: 40px;
+  }
+}
+
+@media (max-width:767px){
+  header.site-header .align-self-center {
+      align-self: center !important;
+      text-align: left;
+  }
+
+  header nav ul.navbar-nav {
+      justify-content: left;
+  }
+  ul.latest-blog li {
+      width: 100% !important;
+      margin-bottom: 15px;
+      display: block !important;
+  }
+
+  ul.latest-blog {
+      display: block;
+  }
+  header nav {
+    display: inline-block;
+    width: 100%;
+  }
+
+  ul.navbar-nav.mr-auto li {
+      display: inline-block;
+      margin: 0 5px 0 0;
+  }
+
+  .navbar-nav .nav-link {
+      font-size: 14px;
+  }
+
+  .header-cart {
+      position: absolute;
+      top: -40px;
+      right: 0;
+  }
+
+  header.site-header {
+      padding: 15px 0;
+  }
+
+  a.header-logo {
+      margin-bottom: 5px;
+      display: block;
+  }
+  .site-footer .footer_inner {
+    padding: 20px 0;
+  }
+
+  .site-footer .menu-main-container ul li a {
+    font-size: 14px;
+    padding: 0 6px;
+  }
+
+  .site-footer .footer-bottom {
+    font-size: 14px;
+  }
+  .site-Banner .Banner-details h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .site-Banner .Banner-details .sub-title {
+    font-size: 14px;
+  }
+
+  .site-Banner .Banner-details a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .site-Banner .gatsby-image-wrapper {
+    height: 350px;
+  }
+  .product-main .details_List .details_inner h2 {
+      font-size: 20px;
+  }
+
+  .product-main .details_List .details_inner p {
+      font-size: 15px;
+  }
+  .product-main .details_List .details_inner .text-right.align-self-center {
+      text-align: left !important;
+  }
+  .countdown-section .countdown-inner h2 {
+    font-size: 25px;
+      margin-bottom: 20px;
+  }
+
+  .countdown-section .countdown-inner .date {
+      margin-bottom: 30px;
+  }
+
+  .countdown-section .countdown-inner .date strong {
+      font-size: 14px;
+      padding: 10px 10px;
+  }
+
+  .countdown-section .countdown-inner a {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  .countdown-section .gatsby-image-wrapper {
+      height: 350px;
+  }
+  ul.blog-list li .post-item .post-thumbnail .gatsby-image-wrapper {
+    height: 200px;
+}
+}
+
+  /* Media Css */

@@ -22,7 +22,7 @@ class IndexPost extends React.Component {
       <React.Fragment>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges.map(items => (
-            <div className="Catalogue__item col-sm-4" key={items.node.id}>
+            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
                 {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fluid} />}
 
@@ -38,10 +38,10 @@ class IndexPost extends React.Component {
                   />
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
-                    <div className="col-sm-4">
+                    <div className="col-sm-4 align-self-center">
                       <span className="price">${items.node.price}</span>
                     </div>
-                    <div className="col-sm-8 text-right">
+                    <div className="col-sm-8 text-right align-self-center">
                       <a
                         href="#"
                         className="Product snipcart-add-item"
