@@ -93,7 +93,6 @@ export const query = graphql`
           image {
             fluid(maxWidth: 1000) {
               base64
-              tracedSVG
               aspectRatio
               src
               srcSet
@@ -119,7 +118,6 @@ export const query = graphql`
           image {
             fluid(maxWidth: 1800) {
               base64
-              tracedSVG
               aspectRatio
               src
               srcSet
@@ -136,7 +134,6 @@ export const query = graphql`
       featureImage {
         fluid(maxWidth: 1800) {
           base64
-          tracedSVG
           aspectRatio
           src
           srcSet
@@ -156,7 +153,6 @@ export const query = graphql`
           featureImage {
             fluid(maxWidth: 1120) {
               base64
-              tracedSVG
               aspectRatio
               src
               srcSet
