@@ -32,16 +32,16 @@
       gatsby develop
       ```
 
-  1.  **Configure Projects.**
+  1.  **Setup your Own Configure Projects.**
 
       Enter your own key
 
       ContentFul:
       - spaceId = **Key**
-      - accessToken = Key
+      - accessToken = **Key**
 
       snipcart:
-      - snipcart = Key
+      - snipcart = **Key**
 
 
   1.  **Open the source code and start editing!**
