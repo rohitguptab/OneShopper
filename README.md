@@ -37,7 +37,7 @@
       Enter your own key
 
       ContentFul:
-      - spaceId = Key
+      - spaceId = **Key**
       - accessToken = Key
 
       snipcart:
