@@ -37,11 +37,11 @@
       Enter your own key
 
       ContentFul:
-      - spaceId
-      - accessToken
+      - spaceId = Key
+      - accessToken = Key
 
       snipcart:
-      - snipcart
+      - snipcart = Key
 
 
   1.  **Open the source code and start editing!**
