@@ -36,11 +36,11 @@
 
       Enter your own key
 
-      ContentFul:
+      [ContentFul](https://be.contentful.com/login):
       - spaceId = **Key**
       - accessToken = **Key**
 
-      snipcart:
+      [snipcart](https://app.snipcart.com/):
       - snipcart = **Key**
 
 
