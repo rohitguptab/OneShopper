@@ -27,10 +27,22 @@
       Navigate into your new site’s directory and start it up.
 
       ```sh
-      cd EcommerceWithGatsby/
+      cd EcommerceWithGatsby
       npm install
       gatsby develop
       ```
+
+  1.  **Configure Projects.**
+
+      Enter your own key
+
+      ContentFul:
+      - spaceId
+      - accessToken
+
+      snipcart:
+      - snipcart
+
 
   1.  **Open the source code and start editing!**
 
