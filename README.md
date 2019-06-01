@@ -19,7 +19,7 @@
 
       ```sh
       # Clone this Repositories
-      gatsby new EcommerceWithGatsby https://github.com/Rohitguptab/EcommerceWithGatsby.git
+      gatsby new OneShopper https://github.com/Rohitguptab/OneShopper.git
       ```
 
   1.  **Start developing.**
@@ -27,7 +27,7 @@
       Navigate into your new site’s directory and start it up.
 
       ```sh
-      cd EcommerceWithGatsby
+      cd OneShopper
       npm install
       gatsby develop
       ```
