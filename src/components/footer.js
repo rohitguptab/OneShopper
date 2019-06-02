@@ -21,7 +21,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="footer-bottom social-right-menu ">
                             <div className="site-info">
-                                Proudly powered by Rohit Gupta.
+                                Rohit Gupta.
                             </div>
                         </div>
                     </div>

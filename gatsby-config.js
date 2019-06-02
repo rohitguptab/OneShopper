@@ -6,7 +6,7 @@ const { spaceId, accessToken, snipcart } = process.env;
 module.exports = {
   siteMetadata: {
     title: `OneShopper`,
-    description: `This Site for Ecommerce project`,
+    description: `E-Commerce site with Gatsby and React`,
     author: `@Rohitguptab`,
   },
   plugins: [
