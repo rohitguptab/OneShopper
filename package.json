@@ -1,7 +1,7 @@
 {
   "name": "OneShopper",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "E-Commerce site with Gatsby and React",
   "version": "0.1.0",
   "author": "Rohit Gupta <rohitguptab33@gmail.com>",
   "dependencies": {
@@ -46,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Rohitguptab/OneShopper"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Rohitguptab/OneShopper/issues"
   }
 }

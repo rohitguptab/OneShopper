@@ -706,6 +706,10 @@ a.header-logo {
 .site-footer .footer-bottom{position:relative;margin-top: 10px;}
 .site-footer .copyright_text{font-size:16px}
 .site-footer .copyright_text p{margin:0}
+a.header-logo img {
+  margin: 0;
+  width: 220px;
+}
 .site-footer .menu-main-container{text-align:center}
 .site-footer .menu-main-container ul li{display:inline-block;vertical-align:middle}
 .site-footer .menu-main-container ul li a{padding:0 15px}
@@ -764,6 +768,10 @@ div#disqus_thread {
       align-self: center !important;
       text-align: left;
   }
+
+  a.header-logo img {
+    width: 160px;
+}
 
   header nav ul.navbar-nav {
       justify-content: left;
