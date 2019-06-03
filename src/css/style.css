@@ -737,6 +737,7 @@ footer.site-footer ul {
   ul.blog-list li .post-item .post-details {
       width: 100%;
       margin-top: 30px;
+      padding: 0 10px;
   }
 
   ul.blog-list li .post-item {
@@ -746,6 +747,16 @@ footer.site-footer ul {
   ul.blog-list li {
       margin-bottom: 40px;
   }
+  .blogs-page .post-details {
+    background: none;
+    padding: 0;
+}
+
+div#disqus_thread {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
 }
 
 @media (max-width:767px){
@@ -856,6 +867,12 @@ footer.site-footer ul {
   }
   ul.blog-list li .post-item .post-thumbnail .gatsby-image-wrapper {
     height: 200px;
+}
+.blogs-page .post-thumbnail .gatsby-image-wrapper {
+  height: auto;
+}
+.snipcart-add-item {
+  padding: 10px 10px;
 }
 }
 

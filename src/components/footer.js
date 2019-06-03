@@ -13,7 +13,7 @@ class Footer extends React.Component {
                                         <li><a href="/about">About</a></li>
                                         <li><a href="/blogs">Blogs</a></li>
                                         <li><a href="/store">Store</a></li>
-                                        <li><a href="/contact">Contact</a></li>
+                                        <li><a href="/contact-us">Contact</a></li>
                                         <li><a href="/copyright">Copyright</a></li>
                                     </ul>
                                 </div>
@@ -21,7 +21,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="footer-bottom social-right-menu ">
                             <div className="site-info">
-                                Proudly powered by Rohit Gupta.
+                                Rohit Gupta.
                             </div>
                         </div>
                     </div>

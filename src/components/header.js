@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-4 align-self-center">
-          <a className="header-logo" href="/">EcoStore</a>
+          <a className="header-logo" href="/">OneShopper</a>
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>
