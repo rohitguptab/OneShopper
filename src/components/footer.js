@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 class Footer extends React.Component {
     render() {
@@ -10,11 +11,11 @@ class Footer extends React.Component {
                             <section id="nav_menu-8" className="widget widget_nav_menu">
                                 <div className="menu-main-container">
                                     <ul id="menu-main" className="menu">
-                                        <li><a href="/about">About</a></li>
-                                        <li><a href="/blogs">Blogs</a></li>
-                                        <li><a href="/store">Store</a></li>
-                                        <li><a href="/contact-us">Contact</a></li>
-                                        <li><a href="/copyright">Copyright</a></li>
+                                        <li><Link to="/about">About</Link></li>
+                                        <li><Link to="/blogs">Blogs</Link></li>
+                                        <li><Link to="/store">Store</Link></li>
+                                        <li><Link to="/contact-us">Contact</Link></li>
+                                        <li><Link to="/copyright">Copyright</Link></li>
                                     </ul>
                                 </div>
                             </section>

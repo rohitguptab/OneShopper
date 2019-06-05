@@ -16,31 +16,31 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-4 align-self-center">
-          <a className="header-logo" href="/"><img src={logo}></img></a>
+          <Link className="header-logo" to="/"><img src={logo}></img></Link>
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blogs">Blogs</a>
+                <Link className="nav-link" to="/blogs">Blogs</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/store">Store</a>
+                <Link className="nav-link" to="/store">Store</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
+                <Link className="nav-link" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact-us">Contact</a>
+                <Link className="nav-link" to="/contact-us">Contact</Link>
               </li>
             </ul>
             <div className="header-cart">
-              <a href="#" className="Header__summary snipcart-summary snipcart-checkout">
+              <Link className="Header__summary snipcart-summary snipcart-checkout" to="#">
                 <i className="fas fa-cart-plus"></i>
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

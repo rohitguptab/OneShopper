@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 export default class Countdown extends React.Component {
   render() {
@@ -12,7 +13,7 @@ export default class Countdown extends React.Component {
             <h2 className="with-underline">{data.title}</h2>
             <span className="date">Last Date :</span>
             <span className="date"><strong><i className="fas fa-clock"></i>{data.date}</strong></span>
-            <a href="/store">Shop Now</a>
+            <Link to="/store">Shop Now</Link>
           </div>
         </div>
       </div>

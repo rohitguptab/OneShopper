@@ -51,7 +51,7 @@ class BlogsPost extends React.Component {
                   </div>
                 </div>
                 <div className="post-details">
-                  <h2 className="post-title"><a href={`/${items.node.slug}`} className="">{items.node.title}</a></h2>
+                  <h2 className="post-title"><Link to={`/${items.node.slug}`}>{items.node.title}</Link></h2>
                   <div className="author">
                     <Img sizes={items.node.author.photo.fluid} />
                     <strong className="name">{items.node.author.name}</strong>
