@@ -1,0 +1,33 @@
+- title: OneShopper
+
+  # this is the URL that is linked from the showcase
+  main_url: https://oneshopper.netlify.com/
+
+  # this URL is used to generate a screenshot
+  url: https://oneshopper.netlify.com/
+
+  # optional: for open-source sites, this URL points to the repo that powers the site
+  source_url: https://github.com/Rohitguptab/OneShopper
+
+  # optional: short paragraph describing the content and/or purpose of the site that will appear in the modal detail view and permalink views for your site
+  description: >
+    OneShopper create for Ecommerce site With Gatsby js + ContentFul + snipcart
+
+  # You can list as many categories as you want here. Check list of Categories below in this doc!
+  # If you'd like to create a new category, simply list it here.
+  categories:
+    - featured
+    - Blog
+    - eCommerce
+    - Agency
+    - Marketing
+    - Web Development
+
+  # Add the name (developer or company) and URL (e.g. Twitter, GitHub, portfolio) to be used for attribution
+  built_by: Rohit Gupta
+  GitHub: https://github.com/Rohitguptab/
+  twiter: https://twitter.com/_rohitguptab
+  Linkdin: https://www.linkedin.com/in/rohitguptab/
+
+  # leave as false, the Gatsby site review board will choose featured sites quarterly
+  featured: false
