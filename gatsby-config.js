@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `OneShopper`,
     description: `E-Commerce site with Gatsby and React`,
-    author: `@Rohitguptab`,
+    author: `@rohitguptab`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

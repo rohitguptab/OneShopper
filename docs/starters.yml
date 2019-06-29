@@ -1,5 +1,5 @@
 - url: https://oneshopper.netlify.com
-  repo: https://github.com/Rohitguptab/OneShopper
+  repo: https://github.com/rohitguptab/OneShopper
   description: This Started created for Ecommerce site with Gatsby + Contentful and snipcart
 
   # These correspond to the category filters in the library
@@ -13,6 +13,7 @@
     - GraphQL
     - React
     - Responsive Design
+    - SEO
 
   # Add your site features
   # These will be included on your starter's detail page.
