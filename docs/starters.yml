@@ -1,6 +1,6 @@
 - url: https://oneshopper.netlify.com
   repo: https://github.com/Rohitguptab/OneShopper
-  description: This Started create for Ecommerce site with Gatsby + Contentful and snipcart
+  description: This Started created for Ecommerce site with Gatsby + Contentful and snipcart
 
   # These correspond to the category filters in the library
   # Make an effort to use the existing tags, and add more if needed!
@@ -19,6 +19,6 @@
   features:
     - Blog post listing with for each blog post.
     - Store page with all Product with few good features like Rating, Price, Checkout, More then one Product images with tabbing.
-    - Contact form with Email notifacation.
+    - Contact form with Email notification.
     - Index pages design with Latest Post, Latest Blog and Deal of week and Banner.
     - So many other Good features
