@@ -16,7 +16,7 @@
 
   ## 🚀 Quick start
 
-  1.  **Create a Gatsby site.**
+  1.  **Setup this site.**
 
       Use the Gatsby CLI to Clone this site.
 
