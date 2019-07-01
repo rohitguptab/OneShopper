@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 
 
-const disqusShortname = "Oneshopper";
+const disqusShortname = "shopper";
 
 const BlogDetails = data => (
     < Layout >
