@@ -9,7 +9,8 @@ class Contact extends React.Component {
                 <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
                 <div className="Contact-us">
                     <div className="container">
-                        <form action="https://formspree.io/rohitguptab33@gmail.com" method="POST" name="contact">
+                        {/* To make form work, use your own formspree credentials in action="" */}
+                        <form action="https://formspree.io/youremail@domain.com" method="POST" name="contact">
                             <div>
                                 <label>Your Name: </label>
                                 <input type="text" name="name" />
