@@ -7,6 +7,8 @@
   <h1 align="center">
     OneShopper
   </h1>
+  <img src="https://github.com/rohitguptab/OneShopper/blob/master/docs/screenshot.jpg" />
+  
 
   Kick off your Ecommerce Website with OneShopper project you can build you site with this, We have used [Gatsby](https://www.gatsbyjs.org/) + [Contenful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=Contenful) and [snipcart](https://www.gatsbyjs.org/packages/gatsby-plugin-snipcart/?=snipcart).
   
