@@ -39,21 +39,24 @@ class IndexPost extends React.Component {
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="price">${items.node.price}</span>
+                      {/*<span className="price">S/{items.node.price}</span>*/}
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
-                      <a
-                        href="#"
-                        className="Product snipcart-add-item"
-                        data-item-id={items.node.slug}
-                        data-item-price={items.node.price}
-                        data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
-                        data-item-name={items.node.name}
-                        data-item-url={`/`}
-                      >
-                        <i className="fas fa-shopping-bag" />Add to Cart
-                    </a>
+                      <span className="price">S/{items.node.price}</span>
                     </div>
+                    {/*<div className="col-sm-8 text-right align-self-center">*/}
+                    {/*  <a*/}
+                    {/*    href="#"*/}
+                    {/*    className="Product snipcart-add-item"*/}
+                    {/*    data-item-id={items.node.slug}*/}
+                    {/*    data-item-price={items.node.price}*/}
+                    {/*    data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}*/}
+                    {/*    data-item-name={items.node.name}*/}
+                    {/*    data-item-url={`/`}*/}
+                    {/*  >*/}
+                    {/*    /!*<i className="fas fa-shopping-bag" />Add to Cart*!/*/}
+                    {/*</a>*/}
+                    {/*</div>*/}
                   </div>
                 </div>
               </div>
@@ -70,12 +73,12 @@ const IndexPage = data => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
-    <LatestBlogs data={data.data.allContentfulBlogs} />
     <div className="container">
-      <div className="text-center"><h2 className="with-underline">Latest Items</h2></div>
+      <div className="text-center"><h2 className="with-underline">Novedades</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
-    <Countdown data={data.data.contentfulDealCountDown} />
+    {/*<LatestBlogs data={data.data.allContentfulBlogs} />*/}
+    {/*<Countdown data={data.data.contentfulDealCountDown} />*/}
   </Layout>
 )
 

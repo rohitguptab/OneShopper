@@ -5,9 +5,10 @@ const { spaceId, accessToken, snipcart } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `OneShopper`,
-    description: `E-Commerce site with Gatsby and React`,
-    author: `@rohitguptab`,
+    title: `Zuki`,
+    siteTitle: `Zuki`,
+    description: `La tiendita de Zuki`,
+    author: `@Valkiie`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `OneShopper`,
-        short_name: `starter`,
+        name: `Zuki`,
+        short_name: `zuki`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
