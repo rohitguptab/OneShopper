@@ -52,3 +52,32 @@ exports.sourceNodes = async ({actions}, {baseUrl, authToken}) => {
 
     return
 };
+
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+    const typeDefs = `
+    type FlotiqProduct implements Node {
+        id: ID!
+        slug: String!
+        name: String!
+        price: Int!
+        description: String
+        productImage: [FlotiqImage]
+        productGallery: [FlotiqImage]
+        flotiqInternal: FlotiqProductFlotiqInternal
+    }
+
+    type FlotiqImage {
+        id: String
+        extension: String
+    }
+
+    type FlotiqProductFlotiqInternal {
+        createdAt: String
+        deletedAt: String
+        updatedAt: String
+        contentType: String
+    }    
+  `
+    createTypes(typeDefs)
+}

@@ -63,7 +63,7 @@ const ProductDetails = data => (
 export default ProductDetails
 
 export const query = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query productBySlug($slug: String!) {
       flotiqProduct(slug: {eq: $slug }) {
         id
         slug
