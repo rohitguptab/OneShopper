@@ -9,7 +9,8 @@
       "description": "Flotiq API key"
     },
     "SNIPCART_API_KEY": {
-      "description": "Snipcart API key"
+      "description": "Snipcart API key",
+      "required": false
     }
   },
   "buildpacks": [
