@@ -1,6 +1,5 @@
 import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import StarRatingComponent from 'react-star-rating-component';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,45 +7,42 @@ import SEO from "../components/seo"
 const ProductDetails = data => (
   < Layout >
 
-    <SEO title={data.data.contentfulProduct.name} keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title={data.data.flotiqProduct.name} keywords={[`gatsby`, `application`, `react`]} />
     <div className="container details-page">
       <div className="product-details">
         <div className="Product-Screenshot">
-          {data.data.contentfulProduct.productMorePhotos === null ? <div className="no-image">No Image</div> :
+          {data.data.flotiqProduct.productGallery && data.data.flotiqProduct.productGallery.length ?
             <Tabs>
-              {data.data.contentfulProduct.productMorePhotos.map(items => (
+              {data.data.flotiqProduct.productGallery.map(items => (
                 <TabPanel key={items.id}>
-                  <Tab><img src={items.fixed.src} /></Tab>
+                  <Tab><img src={`${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.id}.${items.extension}`} /></Tab>
                 </TabPanel>
               ))}
               <TabList>
-                {data.data.contentfulProduct.productMorePhotos.map(items => (
-                  <Tab key={items.id}><img src={items.fixed.src} /></Tab>
+                {data.data.flotiqProduct.productGallery.map(items => (
+                  <Tab key={items.id}><img src={`${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${items.id}.${items.extension}`} /></Tab>
                 ))}
               </TabList>
-            </Tabs>}
+            </Tabs> :
+            <div className="no-image">No Image</div>
+          }
 
         </div>
         <div>
-          <h2>{data.data.contentfulProduct.name}</h2>
+          <h2>{data.data.flotiqProduct.name}</h2>
+
         </div>
-        <StarRatingComponent
-          name="rate1"
-          starCount={5}
-          value={data.data.contentfulProduct.rating}
-        />
         <div className="row buynowinner">
           <div className="col-sm-2">
-            <span className="price">Price: ${data.data.contentfulProduct.price}</span>
+            <span className="price">Price: ${data.data.flotiqProduct.price}</span>
           </div>
           <div className="col-sm-10 text-left">
             <a
               href="#"
               className="Product snipcart-add-item"
-              data-item-id={data.data.contentfulProduct.slug}
-              data-item-price={data.data.contentfulProduct.price}
-              data-item-image={data.data.contentfulProduct.image === null ? "" : data.data.contentfulProduct.image.fixed.src}
-              data-item-name={data.data.contentfulProduct.name}
+              data-item-id={data.data.flotiqProduct.slug}
+              data-item-price={data.data.flotiqProduct.price}
+              data-item-image={data.data.flotiqProduct.productImage && data.data.flotiqProduct.productImage[0] ? `${process.env.GATSBY_FLOTIQ_BASE_URL}/image/1920x0/${data.data.flotiqProduct.productImage[0].id}.${data.data.flotiqProduct.productImage[0].extension}` : ""}              data-item-name={data.data.flotiqProduct.name}
               data-item-url={`/`}
             >
               <i className="fas fa-tags" />
@@ -56,7 +52,7 @@ const ProductDetails = data => (
         </div>
         <div
           dangerouslySetInnerHTML={{
-            __html: data.data.contentfulProduct.details.childMarkdownRemark.html
+            __html: data.data.flotiqProduct.description
           }}
         />
       </div>
@@ -67,32 +63,21 @@ const ProductDetails = data => (
 export default ProductDetails
 
 export const query = graphql`
-  query ProductDetailsQuery($slug: String!) {
-      contentfulProduct(slug: {eq: $slug }) {
-      id
-      name
-    slug
-      image {
-      fixed(width: 1120, height: 500) {
-      width
-          height
-    src
-    srcSet
+  query BlogPostBySlug($slug: String!) {
+      flotiqProduct(slug: {eq: $slug }) {
+        id
+        slug
+        name
+        price
+        description
+        productImage {
+          id
+          extension
+        },
+        productGallery {
+          id
+          extension
+        }
+      }
   }
-}
-price
-      details {
-      childMarkdownRemark {
-    html
-  }
-}
-productMorePhotos {
-  id
-  fixed(width: 1120, height: 600){
-    src
-  }
-}
-rating
-}
-}
 `

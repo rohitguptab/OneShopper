@@ -4,48 +4,50 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
     const StoreTemplate = path.resolve("src/templates/details.js")
-    const BlogTemplate = path.resolve("src/templates/blogDetails.js")
     resolve(
-      graphql(`
-        {
-          allContentfulProduct{
+      graphql(`{
+          allFlotiqProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}) {
             edges{
               node{
                 id
-                slug
+                slug,
+                name,
+                price,
+                description,
+                productImage {
+                  id,
+                  extension
+                },
+                productGallery {
+                  id,
+                  extension
+                }
               }
             }
-          }
-          allContentfulBlogs {
-            edges {
-              node {
-                id
-                slug
-              }
-            }
-          }
-        }
+          
+        }}
+        
       `).then(result => {
         if (result.errors) {
           reject(result.errors)
         }
-        result.data.allContentfulProduct.edges.forEach(edge => {
+
+        const products = result.data.allFlotiqProduct.edges;
+
+        products.forEach((edge, index) => {
+
+          const previous = index === products.length - 1 ? null : products[index + 1].node;
+          const next = index === 0 ? null : products[index - 1].node;
+
           createPage({
             path: edge.node.slug,
             component: StoreTemplate,
             context: {
               slug: edge.node.slug,
+              previous,
+              next
             },
           })
-        });
-        result.data.allContentfulBlogs.edges.forEach(data => {
-          createPage({
-            path: data.node.slug,
-            component: BlogTemplate,
-            context: {
-              slug: data.node.slug
-            }
-          });
         });
         return
       })

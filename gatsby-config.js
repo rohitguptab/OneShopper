@@ -9,7 +9,13 @@ module.exports = {
     description: `E-Commerce site with Gatsby and React`,
     author: `@rohitguptab`,
   },
-  plugins: [
+  plugins: [{
+      "resolve": "gatsby-source-flotiq",
+      "options": {
+        "baseUrl": process.env.GATSBY_FLOTIQ_BASE_URL,
+        "authToken": process.env.FLOTIQ_API_KEY
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,16 +40,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId,
-        accessToken
-      }
-    },
-    {
       resolve: "gatsby-plugin-snipcart",
       options: {
-        apiKey: snipcart,
+        apiKey: process.env.SNIPCART_API_KEY,
         autopop: true,
       },
     },

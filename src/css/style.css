@@ -2,9 +2,10 @@
 *{font-family:'Josefin Sans',sans-serif;}
 .product-main .details_List .gatsby-image-wrapper{height:200px;}
 .img{outline:none;}
+.product-main{margin-bottom: 40px}
 .product-main .details_List{margin:0 0 30px 0;-webkit-box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-o-transition:box-shadow 0.2s;transition:box-shadow 0.2s,-webkit-box-shadow 0.2s;border:1px solid #cccccc73;}
 .product-main .details_List:hover{-webkit-box-shadow:0 10px 20px -6px rgba(0,0,0,0.5);box-shadow:0 10px 20px -6px rgba(0,0,0,0.5);}
-.product-main .details_List .details_inner{padding:20px;position:relative;display:inline-block;}
+.product-main .details_List .details_inner{padding:20px;position:relative;display:inline-block;width:100%}
 .product-main .details_List .details_inner h2{font-size:24px;color:#333;margin-bottom:10px;}
 .product-main .details_List .details_inner h2 a{color:#333;}
 .snipcart-add-item{border:1px solid #ef3d56;padding:10px 15px;display:inline-block;font-size:12px;color:#fff!important;border-radius:5px;font-weight:600;background:#ef3d56;text-decoration:none!important;text-transform:uppercase;}
@@ -66,7 +67,7 @@ span.price{font-weight:bold;font-size:30px;}
 .site-Banner .Banner-details .sub-title{color:#fff;text-shadow:2px 2px 3px #000;font-size:28px;}
 .site-Banner .Banner-details a{background:#ef3d56;color:#fff;text-decoration:none;padding:12px 25px;border-radius:3px;display:inline-block;letter-spacing:1px;}
 .site-Banner .Banner-details >div{max-width:70%;}
-.store-page .product-main{margin-top:30px;}
+.store-page .product-main{margin-top:30px}
 .details-page .product-details{margin-top:30px;}
 .with-underline{position:relative;text-align:left;display:inline-block;margin-bottom:40px;padding-bottom:8px;}
 .with-underline:after{content:"";position:absolute;height:2px;width:100%;left:0;right:0;background:#ef3d56;top:100%;}
