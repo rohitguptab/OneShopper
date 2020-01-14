@@ -2,7 +2,7 @@
 
   Ecommerce starter: [Gatsby](https://www.gatsbyjs.org/) + [Flotiq](https://flotiq.com) + [Snipcart](https://snipcart.com).
   
-  Live Demo: https://oneshopper.netlify.com
+  Live Demo: https://flotiq-starter-products.herokuapp.com
 
   ## Quick start
 
@@ -23,7 +23,7 @@
        create own type using REST API and your API_KEY:
               
        ```sh
-       curl 'https://api.flotiq.com/api/v1/internal/contenttype' -H 'X-AUTH-TOKEN: __YOUR_API_KEY__' -H 'Content-Type: application/json;chars--data-binary ' -X POST --data-binary '{"name":"product","label":"Product","schemaDefinition":{"type":"object","allOf":[{"$ref":"#/components/schemas/AbstractContentTypeSchemaDefinition"},{"type":"object","properties":{"name":{"type":"string","minLength":1},"slug":{"type":"string","minLength":1},"price":{"type":"number","minLength":1},"description":{"type":"string"},"productImage":{"type":"array","items":{"$ref":"#/components/schemas/DataSource"},"minItems":0},"productGallery":{"type":"array","items":{"$ref":"#/components/schemas/DataSource"},"minItems":0}}}],"required":["name","slug","price"],"additionalProperties":false},"metaDefinition":{"propertiesConfig":{"name":{"inputType":"text","unique":true,"isTitlePart":true},"slug":{"inputType":"text","unique":true},"price":{"inputType":"number","unique":false},"description":{"inputType":"richtext","unique":false},"productImage":{"inputType":"datasource","unique":false,"validation":{"relationContenttype":"_media"}},"productGallery":{"inputType":"datasource","unique":false,"validation":{"relationMultiple":true,"relationContenttype":"_media"}}},"order":["name","slug","price","description","productImage","productGallery"]}}' --compressed
+       curl 'https://api.flotiq.com/api/v1/internal/contenttype' -H 'X-AUTH-TOKEN: 62de5f97a9225603a7b61269e96749d6' -H 'Content-Type: application/json;chars--data-binary ' -X POST --data-binary '{"name":"product","label":"Product","schemaDefinition":{"type":"object","allOf":[{"$ref":"#/components/schemas/AbstractContentTypeSchemaDefinition"},{"type":"object","properties":{"name":{"type":"string","minLength":1},"slug":{"type":"string","minLength":1},"price":{"type":"number","minLength":1},"description":{"type":"string"},"productImage":{"type":"array","items":{"$ref":"#/components/schemas/DataSource"},"minItems":0},"productGallery":{"type":"array","items":{"$ref":"#/components/schemas/DataSource"},"minItems":0}}}],"required":["name","slug","price"],"additionalProperties":false},"metaDefinition":{"propertiesConfig":{"name":{"inputType":"text","unique":true,"isTitlePart":true},"slug":{"inputType":"text","unique":true},"price":{"inputType":"number","unique":false},"description":{"inputType":"richtext","unique":false},"productImage":{"inputType":"datasource","unique":false,"validation":{"relationContenttype":"_media"}},"productGallery":{"inputType":"datasource","unique":false,"validation":{"relationMultiple":true,"relationContenttype":"_media"}}},"order":["name","slug","price","description","productImage","productGallery"]}}' --compressed
        ```
        Product Json-Schema Definition is available also in `/flotiq-product.json`. 
       
