@@ -34,6 +34,10 @@
       ```
       contentful space --space-id <CONTENTFUL_SPACE_ID> import --content-file oneshopper.json
       ```
+      
+      Checkout my below blog how to Import and Export data from ContentFul
+      
+      [https://rohitgupta.design/import-and-export-data-with-contentful-cli](https://rohitgupta.design/import-and-export-data-with-contentful-cli)
 
   1.  **Start developing.**
 
