@@ -12,6 +12,7 @@ class About extends React.Component {
                 <div className="col-sm-12">
                     <h2>About Us</h2>
                     <p>This Started created for Ecommerce site with Gatsby + Contentful and snipcart</p>
+                    <a href="https://rohitgupta.design/oneshopper-gatsby-site" target="_blank" />https://rohitgupta.design/oneshopper-gatsby-site</a>
                     <h2>Features</h2>
                     <ul>
                         <li>Blog post listing with for each blog post.</li>
@@ -27,6 +28,8 @@ class About extends React.Component {
                         # Clone this Repositories<br></br>
                         gatsby new OneShopper https://github.com/Rohitguptab/OneShopper.git
                     </code>
+                    <p>Checkout my below blog how to Import and Export data from ContentFul</p>
+                    <a href="https://rohitgupta.design/import-and-export-data-with-contentful-cli" target="_blank" />https://rohitgupta.design/import-and-export-data-with-contentful-cli</a>
                     <h3>Start developing.</h3>
                     <p>Navigate into your new site’s directory and start it up.</p>
                     <code>
