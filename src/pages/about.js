@@ -13,6 +13,27 @@ class About extends React.Component {
                     <h2>About Us</h2>
                     <p>This Started created for Ecommerce site with Gatsby + Contentful and snipcart</p>
                     <p><a href="https://rohitgupta.design/oneshopper-gatsby-site" target="_blank">https://rohitgupta.design/oneshopper-gatsby-site</a></p>
+                    <h2>Author</h2>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="https://images.ctfassets.net/hwhhx381e090/5IlJCTvfaBL5TZ1U56ykpb/098bdd3b3f918aa29708f28fec7fdde9/rohitgupta.jpg?w=200&h=200&q=50&fit=fill" />
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="mb-1">Rohit Gupta</h2>
+                            <p class="mb-0">
+                                <a href="https://rohitgupta.design/" target="_blank">Website</a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="mailto:rohitguptab33@gmail.com">Gmail</a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="https://github.com/rohitguptab" target="_blank">Github</a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="https://twitter.com/_rohitguptab" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
                     <h2>Features</h2>
                     <ul>
                         <li>Blog post listing with for each blog post.</li>
