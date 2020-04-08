@@ -36,6 +36,10 @@ function SEO({ description, lang, meta, keywords, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `generator`,
+          content: `Flotiq.com`
+        },
+        {
           name: `description`,
           content: metaDescription,
         },

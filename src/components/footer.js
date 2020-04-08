@@ -19,7 +19,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="footer-bottom social-right-menu ">
                             <div className="site-info">
-                                ©2019 Oneshopper. All rights reserved.
+                                ©2019 Oneshopper. All rights reserved | <a href="https://flotiq.com">Flotiq.com</a>
                             </div>
                         </div>
                     </div>
