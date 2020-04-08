@@ -1,12 +1,12 @@
 var path = require("path")
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     const StoreTemplate = path.resolve("src/templates/details.js")
     resolve(
       graphql(`{
-          allFlotiqProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}) {
+          allProduct(sort: {fields: flotiqInternal___createdAt, order: DESC}) {
             edges{
               node{
                 id
@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        const products = result.data.allFlotiqProduct.edges;
+        const products = result.data.allProduct.edges;
 
         products.forEach((edge, index) => {
 

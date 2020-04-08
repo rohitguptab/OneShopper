@@ -13,8 +13,10 @@ module.exports = {
       "resolve": "gatsby-source-flotiq",
       "options": {
         "baseUrl": process.env.GATSBY_FLOTIQ_BASE_URL,
-        "authToken": process.env.FLOTIQ_API_KEY
-      }
+        "authToken": process.env.FLOTIQ_API_KEY,
+        "forceReload": false,
+        "includeTypes": ['product', '_media']
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
@@ -36,7 +38,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/oneshopper-logo.png`,
+        icon: `src/images/icon.png`,
       },
     },
     {
