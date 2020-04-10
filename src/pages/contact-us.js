@@ -6,25 +6,25 @@ class Contact extends React.Component {
     render() {
         return (
             < Layout >
-                <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
+                <SEO title="Contact Us" keywords={[`gatsby`, `Contact Us`, `react`]} />
                 <div className="Contact-us">
                     <div className="container">
                         {/* To make form work, use your own formspree credentials in action="" */}
                         <form action="https://formspree.io/rohitguptab33@gmail.com" method="POST" name="contact">
                             <div>
                                 <label>Your Name: </label>
-                                <input type="text" name="name" />
+                                <input type="text" name="name" required />
                             </div>
                             <div>
                                 <label>Your Email: </label>
-                                <input type="email" name="email" />
+                                <input type="email" name="email" required />
                             </div>
                             <div>
                                 <label>Message: </label>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" required></textarea>
                             </div>
                             <div>
-                                <button type="submit">Send</button>
+                                <button type="submit" required>Send</button>
                             </div>
                         </form>
                     </div>

@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from 'react-star-rating-component';
+import { graphql } from "gatsby";
 
 class IndexPost extends React.Component {
   constructor(props) {
@@ -87,7 +88,7 @@ class IndexPost extends React.Component {
 const IndexPage = data => (
 
   <Layout>
-    <SEO title="Store" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
     <div className="container store-page">
       <IndexPost data={data}></IndexPost>
     </div>
@@ -124,6 +125,3 @@ export const query = graphql`
     }
   }
 `
-
-
-

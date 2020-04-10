@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-4 align-self-center">
-          <Link className="header-logo" to="/"><img src={logo}></img></Link>
+          <Link className="header-logo" to="/"><img src={logo} alt="logo"></img></Link>
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>
@@ -41,6 +41,15 @@ const Header = ({ siteTitle }) => (
               <Link className="Header__summary snipcart-summary snipcart-checkout" to="#">
                 <i className="fas fa-cart-plus"></i>
               </Link>
+              {/* <button class="snipcart-add-item"
+                data-item-id="starry-night"
+                data-item-price="79.99"
+                data-item-url="/paintings/starry-night"
+                data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                data-item-image="/assets/images/starry-night.jpg"
+                data-item-name="The Starry Night">
+                Add to cart
+              </button> */}
             </div>
           </nav>
         </div>

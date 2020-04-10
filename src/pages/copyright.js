@@ -6,7 +6,7 @@ class Copyright extends React.Component {
     render() {
         return (
             < Layout >
-                <SEO title="Copyright" keywords={[`gatsby`, `application`, `react`]} />
+                <SEO title="Copyright" keywords={[`gatsby`, `Copyright`, `react`]} />
                 <div className="site-About">
                     <div className="container">
                         <div className="row">

@@ -13,7 +13,7 @@ var settings = {
   slidesToScroll: 1
 };
 
-export default class Banner extends React.Component {
+export default class Banner extends Component {
   render() {
 
     const { BannerData } = this.props;

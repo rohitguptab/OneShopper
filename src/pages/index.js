@@ -7,17 +7,11 @@ import Banner from "../components/banner"
 import LatestBlogs from "../components/latestBlog"
 import Countdown from "../components/countdown"
 import StarRatingComponent from 'react-star-rating-component';
+import { graphql } from "gatsby";
 
 class IndexPost extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-
   render() {
-
     const { data } = this.props;
-
     return (
       <React.Fragment>
         <div className="row product-main">
@@ -66,9 +60,8 @@ class IndexPost extends React.Component {
 }
 
 const IndexPage = data => (
-
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`gatsby`, `oneshopper`, `react`, `Ecommerce`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <LatestBlogs data={data.data.allContentfulBlogs} />
     <div className="container">
@@ -166,6 +159,3 @@ export const query = graphql`
     }
   }
 `
-
-
-

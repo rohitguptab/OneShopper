@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-export default class Countdown extends React.Component {
+export default class Countdown extends Component {
   render() {
     const { data } = this.props;
     return (
