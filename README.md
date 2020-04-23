@@ -36,9 +36,9 @@
        You need to create a file called `.env` inside the root of the directory, with the following structure:
 
        ```
-       GATSBY_FLOTIQ_BASE_URL="https://api.flotiq.com"
-       FLOTIQ_API_KEY="YOUR FLOTIQ API KEY"
-       SNIPCART_API_KEY="YOUR SNIPCART PUBLIC API KEY"
+       GATSBY_FLOTIQ_BASE_URL=https://api.flotiq.com
+       FLOTIQ_API_KEY=YOUR FLOTIQ API KEY
+       SNIPCART_API_KEY=YOUR SNIPCART PUBLIC API KEY
        ```
 
   1.  **Start developing.**
@@ -50,6 +50,16 @@
       npm install
       gatsby develop
       ```
+      
+      If you wish to import example products to your account, before running `gatsby develop` run:
+          
+      ```sh
+      node ./example/importExample.js
+      ```
+      
+      It will add 10 images and 4 products to your Flotiq account.
+      
+      _Note: You need to put your Read and write API key in `.env` for import to work. You don't need Product content type in your account. If you already have products with ids `product-1`, `product-2`, `product-3`, and `product-4` they will be overwritten._
 
   1.  **Open the source code and start editing!**
 
