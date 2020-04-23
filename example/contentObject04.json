@@ -3,12 +3,6 @@
   "name": "Green tea",
   "slug": "green-tea",
   "price": 15,
-  "internal": {
-    "createdAt": "2020-04-08T09:47:01+00:00",
-    "deletedAt": "",
-    "updatedAt": "2020-04-08T09:47:01+00:00",
-    "contentType": "product"
-  },
   "description": "<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo luctus tincidunt. Integer non nulla nibh. In hac habitasse platea dictumst. Aenean tempor odio ligula, at scelerisque lacus porta id. </strong></p>\n\n<p>Sed sit amet ullamcorper felis, id vulputate augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc felis magna, varius id blandit vel, semper in lectus. Aliquam ac volutpat nunc. Morbi mattis lectus nec urna posuere, vel porttitor sapien porta. Proin urna mi, pulvinar in blandit consectetur, tempus vitae augue.</p>\n\n<p>Ut dictum velit et nisl molestie condimentum. Donec quis tincidunt lorem, nec bibendum neque. Pellentesque dictum elementum congue. Etiam dolor diam, sagittis vitae gravida in, interdum vitae purus. Donec vel pretium nisl, eget venenatis arcu.</p>\n",
   "productImage": [
     {
