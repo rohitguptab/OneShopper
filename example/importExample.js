@@ -98,7 +98,6 @@ exports.importExamples = async () => {
                 body: contentObject,
                 headers: { ...headers, 'Content-Type': `application/json` },
             })
-            let json = await res.json()
             if (res.status === 403) {
                 assert.ok(false, `Please provide correct API key (Read and write Application API key)`)
             }
