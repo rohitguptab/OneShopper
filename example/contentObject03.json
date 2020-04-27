@@ -1,0 +1,23 @@
+{
+  "id": "product-3",
+  "name": "English breakfast",
+  "slug": "english-breakfast",
+  "price": 9,
+  "description": "<p>Donec placerat tortor tristique risus faucibus, in laoreet leo pharetra. In in tristique eros. Donec ut mattis lacus, id faucibus metus. Integer ac nisi orci. Proin a mauris risus. Donec viverra eget quam sit amet porta.</p>\n\n<p>Aenean luctus sapien id nibh accumsan, quis faucibus tellus sagittis. Nam luctus eleifend risus, sit amet auctor nulla malesuada vitae. Cras tristique posuere massa ut congue. Donec a congue justo. Integer eleifend finibus pulvinar.</p>\n\n<p>Pellentesque in mauris ac turpis fermentum tincidunt. Nam sodales luctus tellus, a molestie leo molestie nec. Vestibulum in urna ut tortor finibus placerat. Integer non venenatis dolor.</p>\n\n<p><strong>Maecenas iaculis turpis aliquam vestibulum rhoncus. Donec venenatis ipsum eu fermentum tincidunt. Nullam lacus eros, elementum gravida tristique at, semper sit amet urna.</strong></p>\n",
+  "productImage": [
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8d9cc689abd"
+    }
+  ],
+  "productGallery": [
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8d9cc689abd"
+    },
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8d9cde7dff9"
+    }
+  ]
+}
