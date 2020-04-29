@@ -12,7 +12,7 @@ Live Demo: https://flotiq-starter-products.herokuapp.com
 
 Screenshot
 
-<img src="https://github.com/flotiq/gatsby-starter-recipes/raw/master/docs/flotiq-starter-products.png" width=480 />
+<img src="https://github.com/flotiq/gatsby-starter-products/blob/master/docs/flotiq-starter-products.png" width=480 />
 
 ## Quick start
 
