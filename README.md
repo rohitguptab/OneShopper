@@ -62,7 +62,7 @@ Screenshot
     If you wish to import example products to your account, before running `gatsby develop` run:
       
     ```sh
-    node ./example/importExample.js
+    node ./.flotiq/importExample.js
     ```
     
     It will add 10 images and 4 products to your Flotiq account.
