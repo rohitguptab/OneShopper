@@ -1,14 +1,14 @@
 {
-  "name": "OneShopper",
+  "name": "gatsby-starter-products",
   "private": true,
-  "description": "E-Commerce site with Gatsby and React",
+  "description": "A starter for a e-commerce powered by Gatsby and Flotiq",
   "version": "0.1.0",
-  "author": "Rohit Gupta <rohitguptab33@gmail.com>",
+  "author": "Flotiq Developers <hello@flotiq.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "disqus-react": "^1.0.7",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.18.21",
+    "gatsby": "^2.20.4",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-manifest": "^2.2.37",
     "gatsby-plugin-offline": "^2.2.10",
@@ -16,7 +16,7 @@
     "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-source-flotiq": "git+https://github.com/flotiq/gatsby-source-flotiq.git#feature/gatsby-preview-hot-reload",
+    "gatsby-source-flotiq": "^2.0.0",
     "gatsby-transformer-remark": "^2.6.48",
     "gatsby-transformer-sharp": "^2.3.12",
     "graphql": "^14.5.8",
@@ -46,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohitguptab/OneShopper"
+    "url": "https://github.com/flotiq/gatsby-starter-products"
   },
   "bugs": {
-    "url": "https://github.com/Rohitguptab/OneShopper/issues"
+    "url": "https://github.com/flotiq/gatsby-starter-products/issues"
   }
 }

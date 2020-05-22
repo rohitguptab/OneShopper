@@ -1,0 +1,23 @@
+{
+  "id": "product-2",
+  "name": "Earl grey",
+  "slug": "earl-grey-tea",
+  "price": 10,
+  "description": "<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie mollis vestibulum. Donec sit amet tortor augue. Morbi eleifend tristique diam, at congue lorem porttitor varius. </strong></p>\n\n<p>Phasellus vulputate, ante vitae pretium varius, ligula ipsum hendrerit turpis, quis hendrerit ipsum purus maximus ligula. Ut eget ornare nunc. Pellentesque lacinia enim sit amet sem cursus semper. Etiam semper gravida metus. Nunc feugiat ut diam eu auctor.</p>\n\n<p>Curabitur lorem ipsum, luctus ac felis ut, mattis gravida lectus. Praesent ornare purus ac pharetra scelerisque. Cras aliquam est at leo vestibulum ullamcorper. Fusce ultrices orci tellus, facilisis euismod lectus eleifend pharetra. Nunc at malesuada erat. Morbi pellentesque vulputate suscipit. Praesent lobortis velit quis gravida dignissim. Vestibulum venenatis velit rutrum, sodales magna vel, egestas augue.</p>\n",
+  "productImage": [
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8da15ac37fb"
+    }
+  ],
+  "productGallery": [
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8da15ac37fb"
+    },
+    {
+      "type": "internal",
+      "dataUrl": "/api/v1/content/_media/_media-5e8da215d87df"
+    }
+  ]
+}
