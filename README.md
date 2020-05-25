@@ -39,16 +39,6 @@
       
       [https://rohitgupta.design/import-and-export-data-with-contentful-cli](https://rohitgupta.design/import-and-export-data-with-contentful-cli)
 
-  1.  **Start developing.**
-
-      Navigate into your new site’s directory and start it up.
-
-      ```sh
-      cd OneShopper
-      npm install
-      gatsby develop
-      ```
-
   1.  **Setup your Own Configure Projects.**
 
       Enter your own key
@@ -59,6 +49,16 @@
 
       [snipcart](https://app.snipcart.com/):
       - snipcart = **Key**
+
+  1.  **Start developing.**
+
+      Navigate into your new site’s directory and start it up.
+
+      ```sh
+      cd OneShopper
+      npm install
+      gatsby develop
+      ```
 
 
   1.  **Open the source code and start editing!**
