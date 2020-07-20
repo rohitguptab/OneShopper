@@ -52,23 +52,28 @@
   "metaDefinition": {
     "propertiesConfig": {
       "name": {
+        "label": "Name",
         "inputType": "text",
         "unique": true,
         "isTitlePart": true
       },
       "slug": {
+        "label": "Slug",
         "inputType": "text",
         "unique": true
       },
       "price": {
+        "label": "Price",
         "inputType": "number",
         "unique": false
       },
       "description": {
+        "label": "Description",
         "inputType": "richtext",
         "unique": false
       },
       "productImage": {
+        "label": "Product image",
         "inputType": "datasource",
         "unique": false,
         "validation": {
@@ -76,6 +81,7 @@
         }
       },
       "productGallery": {
+        "label": "Product gallery",
         "inputType": "datasource",
         "unique": false,
         "validation": {
