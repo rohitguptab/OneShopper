@@ -37,7 +37,7 @@
       
       Checkout my below blog how to Import and Export data from ContentFul
       
-      [https://rohitgupta.design/import-and-export-data-with-contentful-cli](https://rohitgupta.design/import-and-export-data-with-contentful-cli)
+      [https://rohitgupta.netlify.app/import-and-export-data-with-contentful-cli](https://rohitgupta.netlify.app/import-and-export-data-with-contentful-cli)
 
   1.  **Setup your Own Configure Projects.**
 
