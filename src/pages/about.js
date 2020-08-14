@@ -22,7 +22,7 @@ class About extends React.Component {
                         <div class="col-sm-8">
                             <h2 class="mb-1">Rohit Gupta</h2>
                             <p class="mb-0">
-                                <a href="https://rohitgupta.design/" target="_blank" rel="noopener noreferrer">Website</a>
+                                <a href="https://rohitgupta.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a>
                             </p>
                             <p class="mb-0">
                                 <a href="mailto:rohitguptab33@gmail.com">Gmail</a>
@@ -51,7 +51,7 @@ class About extends React.Component {
                         gatsby new OneShopper https://github.com/Rohitguptab/OneShopper.git
                     </code>
                     <p>Checkout my below blog how to Import and Export data from ContentFul</p>
-                    <p><a href="https://rohitgupta.design/import-and-export-data-with-contentful-cli" target="_blank" rel="noopener noreferrer">https://rohitgupta.design/import-and-export-data-with-contentful-cli</a></p>
+                    <p><a href="https://rohitgupta.netlify.app/import-and-export-data-with-contentful-cli" target="_blank" rel="noopener noreferrer">https://rohitgupta.netlify.app/import-and-export-data-with-contentful-cli</a></p>
                     <h3>Start developing.</h3>
                     <p>Navigate into your new site’s directory and start it up.</p>
                     <code>
