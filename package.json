@@ -17,7 +17,7 @@
     "gatsby-plugin-snipcartv3": "^1.2.5",
     "gatsby-source-contentful": "^2.0.63",
     "gatsby-source-filesystem": "^2.0.33",
-    "gatsby-transformer-remark": "^2.6.50",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.19",
     "graphql": "^14.3.0",
     "prop-types": "^15.7.2",
